@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-box">
+  <h2>Create Account</h2>
+
+  <input type="email" id="regEmail" placeholder="Email ID">
+
+  <div class="password-wrapper">
+    <input type="password" id="regPass" placeholder="Create password">
+  </div>
+
+  <div class="show-pass">
+    <input type="checkbox" onclick="togglePassword('regPass')">
+    <label>Show password</label>
+  </div>
+
+  <p class="hint">
+    Password must be at least 8 characters with uppercase, lowercase, number & symbol.
+  </p>
+
+  <p id="regMsg" class="msg"></p>
+
+  <button onclick="register()">Register</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

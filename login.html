@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkRegistered()">
+
+<div class="auth-box login-animate">
+  <h2>Welcome</h2>
+
+  <input type="email" id="loginEmail" placeholder="Email ID">
+
+  <div class="password-wrapper">
+    <input type="password" id="loginPass" placeholder="Enter password">
+  </div>
+
+  <div class="show-pass">
+    <input type="checkbox" onclick="togglePassword('loginPass')">
+    <label>Show password</label>
+  </div>
+
+  <p id="loginMsg" class="msg"></p>
+
+  <button onclick="login()">Next</button>
+
+  <p class="forgot" onclick="forgotPassword()">Forgot password?</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
